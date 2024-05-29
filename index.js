@@ -150,7 +150,6 @@ app.post('/identify', async (req, res) => {
     }
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
